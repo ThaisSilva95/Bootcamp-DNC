@@ -1,7 +1,20 @@
 
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #393939;
+
+    --fonte-padrao: 'Inter';
+}
+
+/* NAVBAR */
+
 body{ 
     margin: 0px;
     padding: 0px;
+
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 35.84%), #303030;
+    background-repeat: no-repeat;
 }
 
 #principal{
@@ -22,7 +35,7 @@ body{
 }
 
 #principal div a{
-    font-family: "Inter", sans-serif;
+    font-family: var(--fonte-padrao);
     color: white;
     text-decoration: none;
     font-size: 25px;
@@ -35,7 +48,7 @@ body{
 
 #principal button{
     margin-right: 115px;
-    background-color: #0C70F2;
+    background-color: var(--azul-dnc);
     width: 80px;
     height: 39px;
     color: white;
@@ -45,4 +58,200 @@ body{
     border: none;
     box-shadow: 3px 2px 4px 0px #0C70F240;
     cursor: pointer;
+}
+
+
+/* SECTION */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 80px;
+    margin-bottom: 110px;
+}
+
+header{
+    color: white;
+    font-family: var(--fonte-padrao);
+    margin-bottom: 100px;
+
+}
+
+header h1{
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+header .invert{
+    background-color: black;
+    font-weight: bold;
+}
+
+/* FORMULÁRIO */
+
+form{
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 30px;
+    font-weight: 600;
+    width: 600px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form input{
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    background: #FFFFFFE5;
+}
+
+form label{
+    margin: 10px 0px 10px 0px;
+}
+
+form input::placeholder{
+    color: #39393980;
+}
+
+.checkbox-itens label{
+    font-size: 25px;
+}
+
+.checkbox-itens {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    transform: scale(1.7);
+}
+
+button{
+    background-color:  #0C70F2E5;
+    width: 600px;
+    height: 56px;
+    border-radius: 10px ;
+    margin-top: 50px;
+    opacity: 0px;
+    color: white;
+    font-size: 25px;
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 6px 4px 0px #0C70F240;
+    margin-bottom: 50px;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+    color: white;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h5{
+    text-align: center;
+    color: white;
+    background-color: var(--preto-dnc);
+    font-weight: 800;
+    font-family: var(--fonte-padrao);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+footer ul li{
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    font-weight: 500;
+    font-size: 20px;
+
+    margin: 5px 0px 20px 0px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul li a:hover{
+    color: var(--cinza-hover);
+}
+
+footer .endereco{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--fonte-padrao);
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer .linha2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0px;
+    padding-bottom: 15px;
+
+}
+
+footer .linha2 a {
+    font-family: var(--fonte-padrao);
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    padding: 10px;
+    
+}
+
+footer .linha2 a:first-child{
+    border-right: 2px solid white;
+}
+
+footer .linha2 a:hover{
+    color: var(--cinza-hover);
 }
